@@ -1,0 +1,431 @@
+@import url("fonts.css");
+
+:root {
+  --mainBg: #1d1d1f;
+  --secBg: #000;
+  --mainTxt: #fff;
+  --secTxt: #777;
+  --hltClr: #25ca7f;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--mainBg);
+  color: var(--mainTxt);
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--mainTxt);
+}
+
+.container {
+  padding: 50px 70px;
+}
+
+.bg {
+  width: 100%;
+  background-color: var(--secBg);
+  border-radius: 15px;
+  padding: 30px;
+}
+.dfltHover{
+  transition: all linear .5s;
+}
+.dfltHover:hover{
+  -webkit-box-shadow: 0px 0px 20px -5px var(--hltClr);
+  -moz-box-shadow: 0px 0px 20px -5px var(--hltClr);
+  box-shadow: 0px 0px 20px -5px var(--hltClr);
+  transform: translateY(-5px)
+}
+/* Navigation Section CSS Start */
+.nav::-webkit-scrollbar,
+.nav::-webkit-scrollbar-thumb {
+  width: 26px;
+  border-radius: 13px;
+  background-clip: padding-box;
+  border: 10px solid transparent;
+}
+
+.nav::-webkit-scrollbar-thumb {
+  box-shadow: inset 0 0 0 10px;
+}
+
+.nav {
+  position: fixed;
+  width: 150px;
+  height: 100%;
+  top: 0;
+  overflow-y: auto;
+  overflow-x: none;
+  z-index: 99;
+  background-color: #101213;
+  padding: 20px;
+  scrollbar-width: thin;
+}
+
+.nav .logo {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.nav .logo img {
+  width: 90%;
+}
+
+.nav .menu {
+  text-align: center;
+}
+
+.nav .menu {
+  text-align: center;
+}
+
+.nav .menu ul li {
+  position: relative;
+  transition: all linear 0.5s;
+}
+
+.nav .menu ul li a {
+  display: block;
+  font-size: 30px;
+  padding: 10px 0;
+  transition: all linear 0.5s;
+}
+
+.nav .menu ul li span {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  padding: 3px 10px;
+  background-color: var(--hltClr);
+  border-radius: 5px;
+  font-size: 12px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all linear 0.5s;
+}
+
+.nav ul li:hover a {
+  color: var(--hltClr);
+}
+
+.nav ul li:hover span {
+  top: -15px;
+  opacity: 1;
+  visibility: visible;
+}
+
+/* /Navigation Section CSS End */
+/* Content Section CSS Start*/
+/* Header Section CSS Start */
+.content {
+  width: calc(100% - 150px);
+  float: right;
+}
+
+.header {
+  background-image: url("../images/home-bg.jpg");
+  width: 100%;
+  height: 800px;
+  position: relative;
+  -webkit-box-shadow: 0px 0px 20px -5px var(--hltClr);
+  -moz-box-shadow: 0px 0px 20px -5px var(--hltClr);
+  box-shadow: 0px 0px 20px -5px var(--hltClr);
+}
+
+.header:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.header .headTitle {
+  position: absolute;
+  width: 100%;
+  top: 40%;
+  transform: translateY(-40%);
+  text-align: center;
+}
+
+.header .headTitle h1 {
+  font-size: 70px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-style: italic;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.header .headTitle h1:before {
+  position: absolute;
+  content: "";
+  width: 200px;
+  height: 5px;
+  bottom: 0;
+  background-color: var(--hltClr);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.header .headTitle p {
+  font-size: 30px;
+  font-weight: 100;
+  text-transform: capitalize;
+  font-style: italic;
+}
+
+.header .headTitle p span {
+  font-weight: 500;
+  color: var(--hltClr);
+}
+
+.header .headSocialIcon {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+}
+
+.header .headSocialIcon ul li a {
+  display: block;
+  font-size: 20px;
+  padding: 5px;
+  transition: linear 0.3s;
+}
+
+.header .headSocialIcon ul li:hover a {
+  color: var(--hltClr);
+}
+
+/* /Header Section CSS End */
+
+/* About Section CSS Start */
+.secTtl {
+  text-align: center;
+  margin-bottom: 70px;
+  position: relative;
+}
+
+.secTtl h2 {
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.secTtl h2:before,
+.secTtl h2:after {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 2px;
+  bottom: -10px;
+  left: calc(50% - 50px);
+  background-color: var(--hltClr);
+}
+
+.secTtl h2:after {
+  right: calc(50% - 50px);
+  left: auto;
+}
+
+.secTtl span {
+  position: absolute;
+  width: 40px;
+  height: 20px;
+  left: calc(50% - 20px);
+}
+
+.secTtl span:before,
+.secTtl span:after {
+  position: absolute;
+  content: "";
+  width: 14px;
+  height: 14px;
+  top: 0;
+  left: 0;
+  border: 2px solid var(--hltClr);
+  border-radius: 50% 50% 0% 50%;
+  transform: rotate(-45deg);
+}
+
+.secTtl span:after {
+  left: auto;
+  right: 0px;
+  transform: rotate(45deg);
+  border-radius: 50% 50% 50% 0%;
+}
+
+.about .aboutMe .des {
+  overflow: hidden;
+}
+
+.about .aboutMe .des .profilePic {
+  width: 250px;
+  height: 250px;
+  float: left;
+  margin-right: 30px;
+}
+
+.about .aboutMe .des .profilePic img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.about .aboutMe .des .details {
+  width: calc(100% - 280px);
+  float: left;
+}
+
+.about .aboutMe .des .details h4 {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.about .aboutMe .des .details p {
+  font-size: 16px;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+.about .aboutMe .des .details p.location {
+  color: var(--hltClr);
+  margin-bottom: 15px;
+}
+
+.about .aboutMe .info {
+  width: 100%;
+  overflow: hidden;
+  margin-top: 50px;
+}
+
+.about .aboutMe .singleInfo {
+  width: 25%;
+  float: left;
+}
+
+.about .aboutMe .singleInfo .infoIcon {
+  width: 50px;
+  height: 50px;
+  float: left;
+  font-size: 20px;
+  text-align: center;
+  line-height: 30px;
+  border: 1px solid var(--hltClr);
+  border-radius: 50%;
+  padding: 10px;
+  margin-right: 10px;
+}
+
+.about .aboutMe .singleInfo h5 {
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+.about .aboutMe .singleInfo p {
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: var(--hltClr);
+}
+
+.about .aboutMe .singleInfo:last-child a {
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: var(--hltClr);
+  border-bottom: 3px solid var(--hltClr);
+}
+
+/* /About Section CSS End */
+/* My Interest Section CSS Start */
+.myInterest .interests {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.myInterest .interests .singleIntst {
+  flex: 0 0 23%;
+  background-color: var(--mainBg);
+  border-radius: 10px;
+  padding: 20px 10px;
+  margin: 10px 0;
+}
+
+.myInterest .interests .singleIntst .intstIcon {
+  width: 30px;
+  float: left;
+  text-align: center;
+  height: 100%;
+  font-size: 20px;
+  line-height: 20px;
+  margin-right: 20px;
+  color: var(--hltClr);
+}
+
+.myInterest .interests .singleIntst .intstTtl {
+  width: calc(100% - 50px);
+  float: left;
+  font-size: 15px;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
+
+/* /My Interest Section CSS End */
+/* Service Section CSS Start */
+.service .allService{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.service .allService .singleService{
+  flex: 0 0 48%;
+  margin: 10px 0;
+  text-align: center;
+}
+.service .allService .singleService .serviceIcon{
+  font-size: 30px;
+  margin-bottom: 20px;
+  position: relative;
+}
+.service .allService .singleService .serviceIcon::before{
+  position: absolute;
+  content: '';
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--hltClr);
+  border-radius: 50%;
+  left: calc(50% - 20px);
+  opacity: 0;
+  visibility: hidden;
+  transition: all linear .3s;
+}
+.service .allService .singleService:hover .serviceIcon::before{
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1.5);
+}
+.service .allService .singleService .serviceDetails h3{
+  font-size: 18px;
+  font-weight: 600;
+  color:var(--hltClr);
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+/* /Service Section CSS End */
+/* /Content Section CSS End */
