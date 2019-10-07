@@ -441,15 +441,17 @@ a {
 /* /Service Section CSS End */
 
 /* Testimonials Section CSS Start */
-.testimonialSec .testimonials{
+.testimonialSec .testimonials {
   display: flex;
   justify-content: space-between;
 }
-.testimonialSec .testimonials .singleTestimonial{
+
+.testimonialSec .testimonials .singleTestimonial {
   flex: 0 0 49%;
   position: relative;
 }
-.testimonialSec .testimonials .singleTestimonial:after{
+
+.testimonialSec .testimonials .singleTestimonial:after {
   position: absolute;
   font-family: "Font Awesome 5 Free";
   content: "\f10e";
@@ -459,63 +461,75 @@ a {
   font-weight: 900;
   font-size: 25px;
 }
-.testimonialSec .testimonials .singleTestimonial .testiInfo{
+
+.testimonialSec .testimonials .singleTestimonial .testiInfo {
   overflow: hidden;
   margin-bottom: 20px;
 }
-.testimonialSec .testimonials .singleTestimonial .testiInfo .image{
+
+.testimonialSec .testimonials .singleTestimonial .testiInfo .image {
   width: 80px;
   height: 80px;
   float: left;
   margin-right: 20px;
 }
-.testimonialSec .testimonials .singleTestimonial .testiInfo .image img{
+
+.testimonialSec .testimonials .singleTestimonial .testiInfo .image img {
   width: 100%;
   border-radius: 50%;
 }
-.testimonialSec .testimonials .singleTestimonial .testiInfo .info{
+
+.testimonialSec .testimonials .singleTestimonial .testiInfo .info {
   width: calc(70% - 100px);
   float: left;
   margin-top: 15px;
 }
-.testimonialSec .testimonials .singleTestimonial .testiInfo .info h5{
+
+.testimonialSec .testimonials .singleTestimonial .testiInfo .info h5 {
   font-size: 18px;
   margin-bottom: 5px;
 }
-.testimonialSec .testimonials .singleTestimonial .testiInfo .info p{
+
+.testimonialSec .testimonials .singleTestimonial .testiInfo .info p {
   font-size: 13px;
   color: var(--secTxt);
 }
-.testimonialSec .testimonials .singleTestimonial .testiInfo .rating{
+
+.testimonialSec .testimonials .singleTestimonial .testiInfo .rating {
   width: 30%;
   float: left;
-  margin-top:40px;
+  margin-top: 40px;
   text-align: right;
   color: var(--hltClr);
 }
-.testimonialSec .testimonials .singleTestimonial .testiDetails{
+
+.testimonialSec .testimonials .singleTestimonial .testiDetails {
   font-size: 14px;
   text-align: justify;
   line-height: 1.5;
 }
+
 /* /Testimonials Section CSS End */
 
 /* Price Section CSS Start */
-.priceSec .priceList{
+.priceSec .priceList {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.priceSec .priceList .priceBox{
+
+.priceSec .priceList .priceBox {
   flex: 0 0 32%;
   text-align: center;
   position: relative;
 }
-.priceSec .priceList .priceBox .priceHead{
+
+.priceSec .priceList .priceBox .priceHead {
   border-bottom: 4px solid var(--hltClr);
   border-radius: 5px;
 }
-.priceSec .priceList .priceBox .priceHead .priceBoxIcon{
+
+.priceSec .priceList .priceBox .priceHead .priceBoxIcon {
   position: absolute;
   font-size: 30px;
   width: 40px;
@@ -524,7 +538,8 @@ a {
   top: -20px;
   text-align: center;
 }
-.priceSec .priceList .priceBox .priceHead .priceBoxIcon:before{
+
+.priceSec .priceList .priceBox .priceHead .priceBoxIcon:before {
   position: absolute;
   content: '';
   width: 30px;
@@ -537,44 +552,51 @@ a {
   visibility: hidden;
   transition: all linear .3s;
 }
-.priceSec .priceList .priceBox:hover .priceHead .priceBoxIcon:before{
+
+.priceSec .priceList .priceBox:hover .priceHead .priceBoxIcon:before {
   opacity: 1;
   visibility: visible;
   transform: scale(2);
 }
-.priceSec .priceList .priceBox .priceHead h3{
+
+.priceSec .priceList .priceBox .priceHead h3 {
   font-size: 20px;
   font-weight: 600;
   margin: 25px 0;
 }
-.priceSec .priceList .priceBox .priceDetails h4{
+
+.priceSec .priceList .priceBox .priceDetails h4 {
   margin: 25px 0;
   color: var(--hltClr)
 }
-.priceSec .priceList .priceBox .priceDetails h4 .currency{
+
+.priceSec .priceList .priceBox .priceDetails h4 .currency {
   position: relative;
   bottom: 10px;
   font-size: 15px;
 }
 
-.priceSec .priceList .priceBox .priceDetails h4 .price{
+.priceSec .priceList .priceBox .priceDetails h4 .price {
   font-size: 22px;
   font-weight: 500;
 }
 
-.priceSec .priceList .priceBox .priceDetails h4 .period{
+.priceSec .priceList .priceBox .priceDetails h4 .period {
   position: relative;
   bottom: 0;
   font-size: 14px;
 }
-.priceSec .priceList .priceBox .priceDetails ul li{
+
+.priceSec .priceList .priceBox .priceDetails ul li {
   font-size: 16px;
   padding: 5px 0;
 }
-.priceSec .priceList .priceBox .priceDetails ul li del{
+
+.priceSec .priceList .priceBox .priceDetails ul li del {
   opacity: .7;
 }
-.priceSec .priceList .priceBox .priceDetails a{
+
+.priceSec .priceList .priceBox .priceDetails a {
   display: inline-block;
   padding: 10px 25px;
   margin-top: 30px;
@@ -583,10 +605,12 @@ a {
   position: relative;
   transition: all linear .3s;
 }
-.priceSec .priceList .priceBox .priceDetails a:hover{
+
+.priceSec .priceList .priceBox .priceDetails a:hover {
   color: var(--hltClr);
 }
-.priceSec .priceList .priceBox .priceDetails a::before{
+
+.priceSec .priceList .priceBox .priceDetails a::before {
   position: absolute;
   content: '';
   width: 50%;
@@ -598,12 +622,297 @@ a {
   visibility: visible;
   transition: all linear .3s;
 }
-.priceSec .priceList .priceBox .priceDetails a:hover:before{
+
+.priceSec .priceList .priceBox .priceDetails a:hover:before {
   opacity: 1;
   visibility: visible;
   border-radius: 5px;
   transform: scale(2)
 }
-/* /Price Section CSS End */
 
+/* /Price Section CSS End */
+/* Resume Section CSS Start */
+.resumeSec .resume {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.resumeSec .resume .resumeBox {
+  flex: 0 0 49%;
+}
+
+.resumeSec .resume .resumeBox .subSecTtl {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.resumeSec .resume .resumeBox .subSecTtl h2 {
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.resumeSec .resume .resumeBox .subSecTtl span {
+  width: 16px;
+  height: 16px;
+  border: 2px solid var(--hltClr);
+  display: inline-block;
+  position: relative;
+  border-radius: 50%;
+}
+
+.resumeSec .resume .resumeBox .subSecTtl span:after,
+.resumeSec .resume .resumeBox .subSecTtl span:before {
+  position: absolute;
+  content: '';
+  width: 35px;
+  height: 2px;
+  background-color: var(--hltClr);
+  left: -50px;
+  top: calc(50% - 1px);
+}
+
+.resumeSec .resume .resumeBox .subSecTtl span:after {
+  left: auto;
+  right: -50px;
+}
+
+.resumeSec .resume .resumeBox .allExperience .experienceBox,
+.resumeSec .resume .resumeBox .allEducation .educationBox {
+  position: relative;
+  padding-left: 40px;
+  margin-bottom: 40px;
+}
+
+.resumeSec .resume .resumeBox .allExperience .experienceBox:before,
+.resumeSec .resume .resumeBox .allEducation .educationBox:before {
+  position: absolute;
+  content: '';
+  width: 2px;
+  height: 100%;
+  border-radius: 10px;
+  background-color: var(--hltClr);
+  left: 0;
+  top: 0;
+}
+
+.resumeSec .resume .resumeBox .allExperience .experienceBox:after,
+.resumeSec .resume .resumeBox .allEducation .educationBox:after {
+  position: absolute;
+  content: '';
+  width: 30px;
+  height: 2px;
+  border-radius: 10px;
+  background-color: var(--hltClr);
+  left: 0;
+  top: 15px;
+}
+
+.resumeSec .resume .resumeBox .allExperience .experienceBox h3,
+.resumeSec .resume .resumeBox .allEducation .educationBox h3 {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin: 15px 0;
+  position: relative;
+}
+
+.resumeSec .resume .resumeBox .allExperience .experienceBox h3:before,
+.resumeSec .resume .resumeBox .allEducation .educationBox h3:before {
+  position: absolute;
+  content: '';
+  width: 14px;
+  height: 14px;
+  border: 2px solid var(--hltClr);
+  border-radius: 50%;
+  left: -48px;
+  top: 7px;
+  background-color: var(--secBg);
+  z-index: 1;
+  transition: all linear .3s;
+}
+
+.resumeSec .resume .resumeBox .allExperience .experienceBox:hover h3:before,
+.resumeSec .resume .resumeBox .allEducation .educationBox:hover h3:before {
+  background-color: var(--hltClr);
+  left: -25px;
+}
+
+.resumeSec .resume .resumeBox .allExperience .experienceBox p.placeAndTime,
+.resumeSec .resume .resumeBox .allEducation .educationBox p.placeAndTime {
+  font-size: 16px;
+  color: var(--hltClr);
+  margin-bottom: 15px;
+}
+
+.resumeSec .resume .resumeBox .allExperience .experienceBox p,
+.resumeSec .resume .resumeBox .allEducation .educationBox p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* /Resume Section CSS End */
+/* Skill Section CSS Start */
+.skillSec .allSkill{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.skillSec .allSkill .skillBox{
+  flex: 0 0 48%;
+  margin: 15px 0;
+}
+.skillSec .allSkill .skillBox h5{
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.skillSec .allSkill .skillBox .skillBar{
+  width: 100%;
+  height: 10px;
+  border-radius: 10px;
+  background-color: var(--mainBg);
+  -webkit-box-shadow: inset 0px 0px 15px -6px var(--hltClr);
+  -moz-box-shadow: inset 0px 0px 15px -6px var(--hltClr);
+  box-shadow: inset 0px 0px 15px -6px var(--hltClr);
+}
+.skillSec .allSkill .skillBox .skillBar .skillWidth{
+  height: 100%;
+  background-color: var(--hltClr);
+  border-radius: 10px;
+  position: relative;
+}
+.skillSec .allSkill .skillBox .skillBar .skillWidth:after{
+  position: absolute;
+  content: '';
+  width: 16px;
+  height: 16px;
+  right: 0;
+  top: -6px;
+  border-radius: 20% 50% 50% 20%;
+  border: 3px solid var(--hltClr);
+  background-color: var(--secBg);
+}
+.skillSec .allSkill .skillBox .skillBar .skillWidth#html{
+  width: 90%;
+}
+.skillSec .allSkill .skillBox .skillBar .skillWidth#css{
+  width: 80%;
+}
+.skillSec .allSkill .skillBox .skillBar .skillWidth#js{
+  width: 40%;
+}
+.skillSec .allSkill .skillBox .skillBar .skillWidth#jquery{
+  width: 30%;
+}
+.skillSec .allSkill .skillBox .skillBar .skillWidth#php{
+  width: 40%;
+}
+.skillSec .allSkill .skillBox .skillBar .skillWidth#bootstrap{
+  width: 40%;
+}
+.skillSec .allSkill .skillBox .skillBar .skillWidth#illustrator{
+  width: 70%;
+}
+.skillSec .allSkill .skillBox .skillBar .skillWidth#photoshop{
+  width: 60%;
+}
+.skillSec .allSkill .skillBox .skillBar .skillWidth#xd{
+  width: 40%;
+}
+.skillSec .allSkill .skillBox .skillBar .skillWidth#uiAndUx{
+  width: 60%;
+}
+.skillSec .allSkill .skillBox .skillBar .skillWidth span{
+  position: absolute;
+  display: inline-block;
+  font-size: 16px;
+  right: 0;
+  top: -37px;
+}
+/* /Skill Section CSS End */
+/* Working Process Section CSS Start */
+.wp .allWp{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between
+}
+.wp .allWp .wpBox{
+  width: 30%;
+}
+.wp .allWp .wpBox.ra{
+  text-align: right;
+}
+.wp .allWp .wpBox .wpProcess{
+  margin: 50px 0;
+}
+.wp .allWp .wpBox .wpProcess p.num{
+  font-size: 25px;
+  font-weight: 100;
+  color: var(--hltClr);
+}
+.wp .allWp .wpBox .wpProcess h5{
+  font-size: 18px;
+  margin: 10px 0;
+}
+.wp .allWp .wpBox .wpCircle{
+  width: 100%;
+  border:1px solid var(--mainTxt);
+  border-radius: 50%;
+  position: relative;
+  padding: 80px 0;
+  margin-top: 75px;
+}
+.wp .allWp .wpBox .wpCircle:after{
+  position: absolute;
+  content: '';
+  width: calc(100% + 50px);
+  height: calc(100% + 50px);
+  top: -25px;
+  left: -25px;
+  border: 1px solid var(--mainTxt);
+  border-radius: 50%;
+}
+.wp .allWp .wpBox .wpCircle h2{
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+.wp .allWp .wpBox .wpCircle .dot{
+  display: inline-block;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: var(--hltClr);
+  z-index: 1;
+}
+.wp .allWp .wpBox .wpCircle .dot:after{
+  position: absolute;
+  content: '';
+  width: calc(100% + 6px);
+  height: calc(100% + 6px);
+  top: -5px;
+  left: -5px;
+  border: 2px solid var(--hltClr);
+  border-radius: 50%;
+}
+.wp .allWp .wpBox .wpCircle .dot#dot1{
+  left: 6px;
+  top: 29px;
+}
+.wp .allWp .wpBox .wpCircle .dot#dot2{
+  left: 6px;
+  bottom: 26px;
+}
+.wp .allWp .wpBox .wpCircle .dot#dot3{
+  right: 6px;
+  top: 26px;
+}
+.wp .allWp .wpBox .wpCircle .dot#dot4{
+  right: 5px;
+  bottom: 26px;
+}
+/* /Working Process Section CSS End */
 /* /Content Section CSS End */
