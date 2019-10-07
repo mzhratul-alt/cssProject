@@ -13,9 +13,11 @@
   padding: 0;
   box-sizing: border-box;
 }
-html{
+
+html {
   scroll-behavior: smooth;
 }
+
 body {
   font-family: "Poppins", sans-serif;
   background-color: var(--mainBg);
@@ -41,15 +43,18 @@ a {
   border-radius: 15px;
   padding: 30px;
 }
-.dfltHover{
+
+.dfltHover {
   transition: all linear .5s;
 }
-.dfltHover:hover{
+
+.dfltHover:hover {
   -webkit-box-shadow: 0px 0px 20px -5px var(--hltClr);
   -moz-box-shadow: 0px 0px 20px -5px var(--hltClr);
   box-shadow: 0px 0px 20px -5px var(--hltClr);
   transform: translateY(-5px)
 }
+
 /* Navigation Section CSS Start */
 .nav::-webkit-scrollbar,
 .nav::-webkit-scrollbar-thumb {
@@ -388,22 +393,25 @@ a {
 
 /* /My Interest Section CSS End */
 /* Service Section CSS Start */
-.service .allService{
+.service .allService {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.service .allService .singleService{
-  flex: 0 0 48%;
+
+.service .allService .singleService {
   margin: 10px 0;
+  flex: 0 0 49%;
   text-align: center;
 }
-.service .allService .singleService .serviceIcon{
+
+.service .allService .singleService .serviceIcon {
   font-size: 30px;
   margin-bottom: 20px;
   position: relative;
 }
-.service .allService .singleService .serviceIcon::before{
+
+.service .allService .singleService .serviceIcon::before {
   position: absolute;
   content: '';
   width: 40px;
@@ -415,17 +423,75 @@ a {
   visibility: hidden;
   transition: all linear .3s;
 }
-.service .allService .singleService:hover .serviceIcon::before{
+
+.service .allService .singleService:hover .serviceIcon::before {
   opacity: 1;
   visibility: visible;
   transform: scale(1.5);
 }
-.service .allService .singleService .serviceDetails h3{
+
+.service .allService .singleService .serviceDetails h3 {
   font-size: 18px;
   font-weight: 600;
-  color:var(--hltClr);
+  color: var(--hltClr);
   text-transform: capitalize;
   margin-bottom: 20px;
 }
+
 /* /Service Section CSS End */
+
+/* Testimonials Section CSS Start */
+.testimonialSec .testimonials{
+  display: flex;
+  justify-content: space-between;
+}
+.testimonialSec .testimonials .singleTestimonial{
+  flex: 0 0 49%;
+  position: relative;
+}
+.testimonialSec .testimonials .singleTestimonial:after{
+  position: absolute;
+  content: "\f10e";
+  font-family: "Font Awesome 5 Free";
+
+  color: var(--hltClr);
+  right: 0;
+  top: 0;
+}
+.testimonialSec .testimonials .singleTestimonial .testiInfo{
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.testimonialSec .testimonials .singleTestimonial .testiInfo .image{
+  width: 80px;
+  height: 80px;
+  float: left;
+  margin-right: 20px;
+}
+.testimonialSec .testimonials .singleTestimonial .testiInfo .image img{
+  width: 100%;
+  border-radius: 50%;
+}
+.testimonialSec .testimonials .singleTestimonial .testiInfo .info{
+  width: calc(70% - 100px);
+  float: left;
+  margin-top: 15px;
+}
+.testimonialSec .testimonials .singleTestimonial .testiInfo .info h5{
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+.testimonialSec .testimonials .singleTestimonial .testiInfo .info p{
+  font-size: 13px;
+  color: var(--secTxt);
+}
+.testimonialSec .testimonials .singleTestimonial .testiInfo .rating{
+  width: 30%;
+  float: left;
+  margin-top:40px;
+  text-align: right;
+  color: var(--hltClr);
+}
+/* /Testimonials Section CSS End */
+
 /* /Content Section CSS End */
