@@ -451,12 +451,13 @@ a {
 }
 .testimonialSec .testimonials .singleTestimonial:after{
   position: absolute;
-  content: "\f10e";
   font-family: "Font Awesome 5 Free";
-
+  content: "\f10e";
   color: var(--hltClr);
-  right: 0;
-  top: 0;
+  right: 35px;
+  top: 25px;
+  font-weight: 900;
+  font-size: 25px;
 }
 .testimonialSec .testimonials .singleTestimonial .testiInfo{
   overflow: hidden;
@@ -492,6 +493,117 @@ a {
   text-align: right;
   color: var(--hltClr);
 }
+.testimonialSec .testimonials .singleTestimonial .testiDetails{
+  font-size: 14px;
+  text-align: justify;
+  line-height: 1.5;
+}
 /* /Testimonials Section CSS End */
+
+/* Price Section CSS Start */
+.priceSec .priceList{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.priceSec .priceList .priceBox{
+  flex: 0 0 32%;
+  text-align: center;
+  position: relative;
+}
+.priceSec .priceList .priceBox .priceHead{
+  border-bottom: 4px solid var(--hltClr);
+  border-radius: 5px;
+}
+.priceSec .priceList .priceBox .priceHead .priceBoxIcon{
+  position: absolute;
+  font-size: 30px;
+  width: 40px;
+  height: 40px;
+  left: calc(50% - 20px);
+  top: -20px;
+  text-align: center;
+}
+.priceSec .priceList .priceBox .priceHead .priceBoxIcon:before{
+  position: absolute;
+  content: '';
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--hltClr);
+  border-radius: 50%;
+  left: calc(50% - 15px);
+  top: calc(50% - 15px);
+  opacity: 0;
+  visibility: hidden;
+  transition: all linear .3s;
+}
+.priceSec .priceList .priceBox:hover .priceHead .priceBoxIcon:before{
+  opacity: 1;
+  visibility: visible;
+  transform: scale(2);
+}
+.priceSec .priceList .priceBox .priceHead h3{
+  font-size: 20px;
+  font-weight: 600;
+  margin: 25px 0;
+}
+.priceSec .priceList .priceBox .priceDetails h4{
+  margin: 25px 0;
+  color: var(--hltClr)
+}
+.priceSec .priceList .priceBox .priceDetails h4 .currency{
+  position: relative;
+  bottom: 10px;
+  font-size: 15px;
+}
+
+.priceSec .priceList .priceBox .priceDetails h4 .price{
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.priceSec .priceList .priceBox .priceDetails h4 .period{
+  position: relative;
+  bottom: 0;
+  font-size: 14px;
+}
+.priceSec .priceList .priceBox .priceDetails ul li{
+  font-size: 16px;
+  padding: 5px 0;
+}
+.priceSec .priceList .priceBox .priceDetails ul li del{
+  opacity: .7;
+}
+.priceSec .priceList .priceBox .priceDetails a{
+  display: inline-block;
+  padding: 10px 25px;
+  margin-top: 30px;
+  font-size: 16px;
+  font-weight: 100;
+  position: relative;
+  transition: all linear .3s;
+}
+.priceSec .priceList .priceBox .priceDetails a:hover{
+  color: var(--hltClr);
+}
+.priceSec .priceList .priceBox .priceDetails a::before{
+  position: absolute;
+  content: '';
+  width: 50%;
+  height: 50%;
+  border: 1px solid var(--hltClr);
+  left: calc(50% - 25%);
+  top: calc(50% - 25%);
+  opacity: 0;
+  visibility: visible;
+  transition: all linear .3s;
+}
+.priceSec .priceList .priceBox .priceDetails a:hover:before{
+  opacity: 1;
+  visibility: visible;
+  border-radius: 5px;
+  transform: scale(2)
+}
+/* /Price Section CSS End */
 
 /* /Content Section CSS End */
