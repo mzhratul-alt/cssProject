@@ -915,4 +915,336 @@ a {
   bottom: 26px;
 }
 /* /Working Process Section CSS End */
+/* Portfolio Section CSS Start */
+.pfSec .pfMenu{
+  text-align: center;
+  margin: 50px 0;
+}
+.pfSec .pfMenu ul{
+  display: inline-block;
+  background-color: var(--secBg);
+  border-radius: 30px;
+  -webkit-box-shadow: inset 0px 0px 20px -6px var(--hltClr);
+  -moz-box-shadow: inset 0px 0px 20px -6px var(--hltClr);
+  box-shadow: inset 0px 0px 20px -6px var(--hltClr);
+}
+.pfSec .pfMenu ul li{
+  float: left;
+}
+.pfSec .pfMenu ul li a{
+  display: block;
+  padding: 10px 20px;
+  border-radius: 30px;
+  background-color: rgba(37,202,127,0);
+  transition: all linear .5s;
+}
+.pfSec .pfMenu ul li:hover a,
+.pfSec .pfMenu ul li a.active{
+  background-color: rgba(37,202,127,1);
+}
+.pfSec .pfContainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.pfSec .pfContainer .pfBox{
+  flex: 0 0 32%;
+  height: 400px;
+  margin: 15px 0;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.pfSec .pfContainer .pfBox .pfImg{
+  line-height: 0;
+}
+.pfSec .pfContainer .pfBox .pfImg img{
+  width: 100%;
+  height: 400px;
+  object-fit: none;
+  transition: all linear .5s;
+}
+.pfSec .pfContainer .pfBox:hover .pfImg img{
+  transform: scale(1.2)
+}
+.pfSec .pfContainer .pfBox .pfHover{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(37,202,127,.7);
+  opacity: 0;
+  visibility: hidden;
+  transition: all linear .3s;
+}
+.pfSec .pfContainer .pfBox:hover .pfHover{
+  opacity: 1;
+  visibility: visible;
+}
+.pfSec .pfContainer .pfBox .pfHover a{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.pfSec .pfContainer .pfBox .pfHover h5{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.5;
+  text-align: center;
+  width: 100%;
+  padding: 0 10px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all linear .5s;
+}
+.pfSec .pfContainer .pfBox:hover .pfHover h5{
+  opacity: 1;
+  visibility: visible;
+}
+.pfSec .pfContainer .pfBox .pfHover p{
+  position: absolute;
+  left: -10px;
+  bottom: 10px;
+  transition: all linear .3s;
+}
+.pfSec .pfContainer .pfBox:hover .pfHover p{
+  left: 15px;
+}
+.pfSec .pfContainer .pfBox .pfHover button{
+  position: absolute;
+  right: -10px;
+  bottom: 10px;
+  font-size: 30px;
+  cursor: pointer;
+  background: none;
+  color: var(--mainTxt);
+  padding: 5px;
+  border: none;
+  border-top: 3px solid var(--mainTxt);
+  border-bottom: 3px solid var(--mainTxt);
+  border-radius: 10px;
+  transition: all linear .3s;
+}
+.pfSec .pfContainer .pfBox .pfHover button:hover{
+  background-color: var(--mainTxt);
+  color: var(--hltClr);
+}
+.pfSec .pfContainer .pfBox:hover .pfHover button{
+  right: 15px;
+}
+/* /Portfolio Section CSS End */
+/* Blog Section CSS Start */
+.blogSec .allBlog{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.blogSec .allBlog .blogBox{
+  flex: 0 0 32%;
+  margin: 15px 0;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  background-color: var(--secBg);
+}
+.blogSec .allBlog .blogBox .blogImg{
+  line-height: 0;
+  height: 300px;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 0px 20px -5px var(--hltClr);
+  -moz-box-shadow: 0px 0px 20px -5px var(--hltClr);
+  box-shadow: 0px 0px 20px -5px var(--hltClr);
+}
+.blogSec .allBlog .blogBox .blogImg img{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  transition: linear .5s;
+}
+.blogSec .allBlog .blogBox:hover .blogImg img{
+  transform: scale(1.1);
+}
+.blogSec .allBlog .blogBox .blogDetails h3{
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin: 20px 0;
+  transition: all linear .5s;
+}
+.blogSec .allBlog .blogBox .blogDetails h3:hover,
+.blogSec .allBlog .blogBox .blogDetails a:hover,
+.blogSec .allBlog .blogBox .blogDetails .blogBtn a:hover{
+  color: var(--hltClr);
+}
+.blogSec .allBlog .blogBox .blogDetails span{
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: lightgray;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+.blogSec .allBlog .blogBox .blogDetails > a{
+  display: inline-block;
+  font-size: 13px;
+  transition: linear .5s;
+}
+.blogSec .allBlog .blogBox .blogDetails .blogBtn{
+  margin: 20px 0;
+  padding: 20px 0;
+  border-top: 5px solid var(--mainBg);
+}
+.blogSec .allBlog .blogBox .blogDetails .blogBtn a{
+  display: inline-block;
+  font-size: 16px;
+  padding: 5px 15px;
+  border-top: 5px solid var(--hltClr);
+  border-bottom: 5px solid var(--hltClr);
+  border-radius: 10px;
+  transition:all linear .5s;
+}
+.blogSec .allBlog .blogBox .blogDetails .blogBtn a:hover{
+  background-color: var(--hltClr);
+  color: var(--mainTxt);
+}
+/* /Blog Section CSS End */
+/* Contact Section CSS Start */
+.contact .msgForm{
+  -webkit-box-shadow: 0px 0px 20px -5px var(--hltClr);
+  -moz-box-shadow: 0px 0px 20px -5px var(--hltClr);
+  box-shadow: 0px 0px 20px -5px var(--hltClr);
+}
+.contact .msgForm .inputGroup{
+  display: flex;
+  justify-content: space-between;
+}
+.contact .msgForm .inputGroup .inputField{
+  flex: 0 0 49%;
+}
+.contact .msgForm .inputGroup .inputField input,
+.contact .msgForm .msgBox textarea{
+  width: 100%;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 1px;
+  color: lightgray;
+  background: none;
+  padding: 15px;
+  border: none;
+  border-bottom: 2px solid var(--mainBg);
+  border-radius: 20px;
+  transition: all linear .5s;
+}
+.contact .msgForm .inputGroup .inputField input:focus,
+.contact .msgForm .msgBox textarea:focus{
+  border-bottom: 2px solid var(--hltClr);
+  outline: none;
+}
+.contact .msgForm .msgBox{
+  margin: 40px 0;
+}
+.contact .msgForm .msgBox textarea{
+  overflow: auto;
+  resize: none;
+  height: 200px;
+  display: block;
+}
+.contact .msgForm .subBtn{
+  width: 100%;
+  text-align: center;
+}
+.contact .msgForm .subBtn button{
+  display: inline-block;
+  font-size: 20px;
+  color: var(--mainTxt);
+  border: none;
+  background: none;
+  padding: 10px 15px;
+  position: relative;
+  transition: all linear .3s;
+}
+.contact .msgForm .subBtn button:hover{
+  color: var(--hltClr);
+}
+.contact .msgForm .subBtn button:after{
+  position: absolute;
+  content: '';
+  width: 50%;
+  height: 50%;
+  border: 1px solid var(--hltClr);
+  left: calc(50% - 25%);
+  top: calc(50% - 25%);
+  opacity: 0;
+  visibility: visible;
+  transition: all linear .3s;
+}
+.contact .msgForm .subBtn button:hover:after{
+  opacity: 1;
+  visibility: visible;
+  border-radius: 5px;
+  transform: scale(2);
+}
+.contact .contactInfo{
+  display: flex;
+  justify-content: space-between;
+  margin: 100px 0;
+}
+.contact .contactInfo .contactBox{
+  flex: 0 0 33%;
+  text-align: center;
+}
+.contact .contactInfo .contactBox .contactIcon{
+  font-size: 30px;
+}
+.contact .contactInfo .contactBox .contactIcon i.fa-phone{
+  transform: rotate(180deg);
+}
+.contact .contactInfo .contactBox p.contactTtl{
+  display: inline-block;
+  font-size: 14px;
+  opacity: .8;
+  padding: 8px 10px;
+  margin: 20px 0;
+  border-top: 3px solid var(--hltClr);
+  border-bottom: 3px solid var(--hltClr);
+  border-radius: 10px;
+}
+.contact .contactMap{
+  padding: 0;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.contact .contactMap iframe{
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+/* /Contact Section CSS End */
+/* Footer Section CSS Start */
+.footer{
+  width: 100%;
+  background-color: var(--secBg);
+  padding: 20px 30px;
+  -webkit-box-shadow: 0px 0px 20px -5px var(--hltClr);
+  -moz-box-shadow: 0px 0px 20px -5px var(--hltClr);
+  box-shadow: 0px 0px 20px -5px var(--hltClr);
+}
+.footer p{
+  display: inline-block;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+.footer p a,.footer p span{
+  font-weight: 600;
+  color: var(--hltClr);
+}
+.footer p.footerRight{
+  float: right;
+}
+/* /Footer Section CSS End */
 /* /Content Section CSS End */
